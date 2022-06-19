@@ -1,6 +1,6 @@
 #Buralara əl dəymə...
 #Deploy butonuna bas deploy elə.
-#Rəsmi Kanal t.me/Botsinator 
+#Rəsmi Kanal t.me/RiyaddBlog 
 
 import os, youtube_dl, requests, time
 from config import Config
@@ -33,7 +33,7 @@ def start(client, message):
         quote=False,
         reply_markup=InlineKeyboardMarkup(
             [[
-                    InlineKeyboardButton('Rəsmi Kanal ✅', url='https://t.me/Botsinator'),
+                    InlineKeyboardButton('Rəsmi Kanal ✅', url='https://t.me/RiyaddBlog'),
                     InlineKeyboardButton('Playlist 🎵', url=f'https://t.me/{Config.PLAYLIST_NAME}')
                   ],[
                     InlineKeyboardButton('Sahib 👨🏻‍💻', url=f'T.me/{Config.BOT_OWNER}')
@@ -52,7 +52,7 @@ def help(client, message):
         quote=False,
         reply_markup=InlineKeyboardMarkup(
             [[
-                    InlineKeyboardButton('Rəsmi Kanal ✅', url='https://t.me/Botsinator'),
+                    InlineKeyboardButton('Rəsmi Kanal ✅', url='https://t.me/RiyaddBlog'),
                     InlineKeyboardButton('Playlist 🎵', url=f'https://t.me/{Config.PLAYLIST_NAME}')
                   ],[
                     InlineKeyboardButton('Sahib 👨🏻‍💻', url=f'T.me/{Config.BOT_OWNER}')
@@ -111,7 +111,7 @@ def a(client, message):
             info_dict = ydl.extract_info(link, download=False)
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
-        rep = f"🎵 Yüklədi [Music Bot](https://t.me/{Config.BOT_USERNAME})"
+        rep = f"🎵 Yüklədi [Aze song Bot](https://t.me/{Config.BOT_USERNAME})"
         secmul, dur, dur_arr = 1, 0, duration.split(':')
         for i in range(len(dur_arr)-1, -1, -1):
             dur += (int(dur_arr[i]) * secmul)
